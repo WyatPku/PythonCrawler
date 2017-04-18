@@ -2,14 +2,18 @@
 # using python 2.7
 
 import urllib2
+from PkuLogin import pku_login
 
 
 def main():
     try:
         outfile = open('test.html', 'w')
+        """
         request = urllib2.Request("http://wuyue98.cn/owncloud")
         response = urllib2.urlopen(request)
         page = response.read()
+        """
+        page = pku_login()
         print >>outfile, page
         outfile.flush()
         outfile.close()
