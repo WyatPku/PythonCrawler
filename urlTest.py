@@ -7,11 +7,10 @@ import urllib2
 def main():
     try:
         outfile = open('test.html', 'w')
-        request = urllib2.Request("http://www.baidu.com")
+        request = urllib2.Request("http://wuyue98.cn/owncloud")
         response = urllib2.urlopen(request)
-        # print response.read()
-        # print(response.read(), outfile)
-        outfile.write(response.read())
+        page = response.read()
+        print >>outfile, page
         outfile.flush()
         outfile.close()
     except IOError:
