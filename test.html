@@ -1,150 +1,67 @@
-<!DOCTYPE html>
-<html class="ng-csp" data-placeholder-focus="false" lang="en" >
-	<head data-requesttoken="AigWHGcGOw5qBh4bD2IEBRF/B0ooHggFRh0jGRAndHM=:weB3Q7O8+3qPd2NHE6FyevdjsZmAwI18OjfZs7xnZ9I=">
-		<meta charset="utf-8">
-		<title>
-		ownCloud		</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="referrer" content="never">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="apple-itunes-app" content="app-id=543672169">
-		<meta name="theme-color" content="#1d2d44">
-		<link rel="icon" href="/owncloud/core/img/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" href="/owncloud/core/img/favicon-touch.png">
-		<link rel="mask-icon" sizes="any" href="/owncloud/core/img/favicon-mask.svg" color="#1d2d44">
-					<link rel="stylesheet" href="/owncloud/core/css/styles.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/inputs.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/header.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/icons.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/fonts.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/apps.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/global.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/fixes.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/multiselect.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/mobile.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/vendor/jquery-ui/themes/base/jquery-ui.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/jquery-ui-fixes.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/tooltip.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/share.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/apps/files_versions/css/versions.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/apps/files_pdfviewer/css/style.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/apps/files_videoplayer/css/style.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/apps/firstrunwizard/css/colorbox.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/apps/firstrunwizard/css/firstrunwizard.css?v=44f549c002f9d7bd0c14461179cc593a">
-					<link rel="stylesheet" href="/owncloud/core/css/jquery.ocdialog.css?v=44f549c002f9d7bd0c14461179cc593a">
-									<script src="/owncloud/index.php/core/js/oc.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/jquery/dist/jquery.min.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/jquery-migrate/jquery-migrate.min.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/jquery-ui/ui/jquery-ui.custom.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/underscore/underscore.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/moment/min/moment-with-locales.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/handlebars/handlebars.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/blueimp-md5/js/md5.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/bootstrap/js/tooltip.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/backbone/backbone.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/es6-promise/dist/es6-promise.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/davclient.js/lib/client.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/placeholders.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/compatibility.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/jquery.ocdialog.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/oc-dialogs.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/js.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/l10n.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/octemplate.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/eventsource.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/config.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/search/js/search.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/oc-requesttoken.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/apps.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/mimetype.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/mimetypelist.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/snapjs/dist/latest/snap.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/backbone/backbone.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/oc-backbone.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/placeholder.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/jquery.avatar.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/backgroundjobs.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/shareconfigmodel.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/shareitemmodel.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialogresharerinfoview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialoglinkshareview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialogmailview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialogexpirationview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialogshareelistview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/sharedialogview.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/share.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/apps/files_pdfviewer/js/previewplugin.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/apps/files_videoplayer/js/viewer.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/apps/firstrunwizard/js/jquery.colorbox.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/apps/firstrunwizard/js/firstrunwizard.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/files/fileinfo.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/files/client.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/vendor/jsTimezoneDetect/jstz.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/visitortimezone.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/lostpassword.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					<script src="/owncloud/core/js/login.js?v=44f549c002f9d7bd0c14461179cc593a"></script>
-					</head>
-	<body id="body-login">
-		<noscript>
-	<div id="nojavascript">
-		<div>
-			This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank" rel="noreferrer">enable JavaScript</a> and reload the page.		</div>
-	</div>
-</noscript>
-		<div class="wrapper">
-			<div class="v-align">
-									<header role="banner">
-						<div id="header">
-							<div class="logo svg">
-								<h1 class="hidden-visually">
-									ownCloud								</h1>
-							</div>
-							<div id="logo-claim" style="display:none;"></div>
-						</div>
-					</header>
-								
-<!--[if IE 8]><style>input[type="checkbox"]{padding:0;}</style><![endif]-->
-<form method="post" name="login">
-	<fieldset>
-									<div id="message" class="hidden">
-			<img class="float-spinner" alt=""
-				src="/owncloud/core/img/loading-dark.gif">
-			<span id="messageText"></span>
-			<!-- the following div ensures that the spinner is always inside the #message div -->
-			<div style="clear: both;"></div>
-		</div>
-		<p class="grouptop">
-			<input type="text" name="user" id="user"
-				placeholder="Username or email"
-				value=""
-				autofocus				autocomplete="on" autocapitalize="off" autocorrect="off" required>
-			<label for="user" class="infield">Username or email</label>
-		</p>
-
-		<p class="groupbottom">
-			<input type="password" name="password" id="password" value=""
-				placeholder="Password"
-								autocomplete="on" autocapitalize="off" autocorrect="off" required>
-			<label for="password" class="infield">Password</label>
-			<input type="submit" id="submit" class="login primary icon-confirm svg" title="Log in" value="" disabled="disabled"/>
-		</p>
-
-						<div class="remember-login-container">
-						<input type="checkbox" name="remember_login" value="1" id="remember_login" class="checkbox checkbox--white">
-						<label for="remember_login">Stay logged in</label>
-		</div>
-				<input type="hidden" name="timezone-offset" id="timezone-offset"/>
-		<input type="hidden" name="timezone" id="timezone"/>
-		<input type="hidden" name="requesttoken" value="AigWHGcGOw5qBh4bD2IEBRF/B0ooHggFRh0jGRAndHM=:weB3Q7O8+3qPd2NHE6FyevdjsZmAwI18OjfZs7xnZ9I=">
-	</fieldset>
-</form>
-				<div class="push"></div><!-- for sticky footer -->
-			</div>
-		</div>
-		<footer role="contentinfo">
-			<p class="info">
-				<a href="https://owncloud.org" target="_blank" rel="noreferrer">ownCloud</a> – web services under your control			</p>
-		</footer>
-	</body>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+<link rel="stylesheet" type="text/css" href="./resources/css/login.css" />
+<script type="text/javascript" src="./resources/ext/javascript/ext-base.js"></script>
+<script type="text/javascript" src="./resources/ext/javascript/ext-all-debug.js"></script>
+<script type="text/javascript">
+	var redirectURL = "http://elective.pku.edu.cn:80/elective2008/agent4Iaaa.jsp/../ssoLogin.do";
+	var redirectLogonURL = "null";	
+</script>
+<link rel="stylesheet" type="text/css" href="./resources/css/login.css" />
+<script type="text/javascript" src="./resources/javascript/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./resources/javascript/OAuthLogin.js"></script>
+<title>学生选课系统-身份认证</title>
+</head>
+<body onload="focusName()">
+   <div id="main">
+      <div id="top"><a href="http://www.pku.edu.cn"><img src="./resources/images/pku_logo.png"/></a></div>
+      <div id="mid">
+	      <!-- <div id="left" onclick="changeViewImg()"></div> -->
+	      <div id="panel">
+	         <div id="title">
+	         	<img src="./resources/images/IAAA_Logo.png"/>用户登录
+	         </div>
+	             <div id="user_area">
+		            <input type="text" tabIndex = "1" id="user_name" name="userName" value="学号/职工号/北大邮箱" onFocus="focusUserName()" onblur="leaveUserName()" onKeyDown="enterPassword(event)" onMouseOver="changeBorderColor(this)" onMouseOut="backBorderColor(this)" onChange="showOrHideSmsCode()"/>
+		            <a href="./resources/help/iaaaUserIntro.jsp" target='_blank' id="user_intro">账号说明</a>
+		         </div>
+		        <div id="passwd_area">
+		        	  <input type="text" tabIndex = "2"  id="password" name="password"  value="密码" onFocus="focusPassword()" onblur="leavePassword()" onKeyDown="enterSMSCode(event)" onMouseOver="changeBorderColor(this)" onMouseOut="backBorderColor(this)"/>
+		            <a href="/iaaa/pageFlows/authen/findPwd2.jsp" target='_blank' id="forgot">忘记密码？</a>
+		         </div>
+		         <div id="sms_area">
+		            <input type="text" tabIndex = "3"  id="sms_code" name="sms_code" value="短信验证码" onFocus="focusSMSCode()" onblur="leaveSMSCode()" onKeyDown="enterCode(event)"  onMouseOver="changeBorderColor(this)" onMouseOut="backBorderColor(this)"/>
+		            <input type="button" id="sms_button" onclick="sendSMSCode()" value="获取短信验证码"/>
+		         </div>
+		         <div id="code_area">
+		            <input type="text" tabIndex = "3"  id="valid_code" name="validCode" value="验证码" onFocus="focusCode()" onblur="leaveCode()" onKeyDown="enterKey(event)" onMouseOver="changeBorderColor(this)" onMouseOut="backBorderColor(this)"/>
+		            <img id="code_img" src="/iaaa/servlet/DrawServlet?Rand="+Math.random()/>
+		            <a href="javascript:changeCode()" id="change_code">换一张</a>
+		         </div>
+		         <div id="remember_area">
+		         	<input type="checkbox" id="remember_check"/><div id="remember_text" onclick="clickCheck()" onmouseover="mouseOverCheck()" onmouseout="mouseOutCheck()">记住我的账号</div>
+		         </div>
+		         <div id="submit_area">
+		            <input type="hidden" id="appid" value="syllabus">
+		            <input type="button" id="submit_button" onclick="oauthLogon()" value="登 录"/>
+		            
+		            <span id="msg"></span>
+		         </div>
+	      </div>
+	  </div>
+      <div id="bottom">
+         <img src="./resources/images/bdxxfw.jpg" width="86"/>
+      	<div id="lx_info">
+         	<span>服务热线：010-62751023</span>
+            <span>Email：<a href="mailto:sermis@pku.edu.cn">sermis@pku.edu.cn</a></span>
+        	<span>© 北京大学计算中心</span>
+        </div>
+      </div>
+   </div>
+</body>
 </html>
-
