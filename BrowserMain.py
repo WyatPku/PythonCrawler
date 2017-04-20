@@ -4,6 +4,7 @@
 import time
 from splinter import Browser
 from pkulinks import *
+from PkuGet import PkuGet
 
 
 def main():
@@ -26,8 +27,13 @@ def main():
     print "ready to catch information!"
     cmd = raw_input()
     while cmd != "exit":
-        if cmd.startswith("get "):
+        strlst = cmd.split(' ')
+        cmd0 = strlst[0]
+        if cmd0 == "get":
             print "begin catching information"
+            pkuget = PkuGet(browser)
+            if pkuget.state == 1:
+                pkuget.getinfo(strlst)
         cmd = raw_input()
     browser.quit()
 
