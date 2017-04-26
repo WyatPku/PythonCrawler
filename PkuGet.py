@@ -34,6 +34,9 @@ class PkuGet:
                 pagenum = len(pagelist.text.splitlines())
                 print "find pagelist :", pagenum
             if strlst[1] == "公选课":
+                ifrequirej = False
+                if len(strlst) > 2 and strlst[2] == "more":
+                    ifrequirej = True
                 glocount = 0
                 print "creating excel book"
                 workbook = xlwt.Workbook()
@@ -100,15 +103,28 @@ class PkuGet:
                         basic.write(glocount, 10, shangkeshijianjijiaoshi.decode("utf-8"))
                         basic.write(glocount, 11, beizhu.decode("utf-8"))
                         print "finished basic info catch of", kechengming
+                        if ifrequirej:
+                            kechenghao_a.click()
+                            time.sleep(self.delay / 2)
+                            # print self.browser.title
+                            outputfile = open("gongxuanke/" + str(glocount) + ".htm", 'w')
+                            self.browser.windows.current = self.browser.windows[1]
+                            outputfile.write(str(self.browser.html).replace(
+                                """<link href="/elective2008/resources/css/style.css" rel="stylesheet" type="text/css">""",
+                                """<meta charset="utf-8"><link href="style.css" rel="stylesheet" type="text/css">"""))
+                            outputfile.close()
+                            self.browser.windows[1].close()
+                            time.sleep(1)
+                            # print self.browser.title
+                            print "finished more info catch"
+                        # while True:
+                        # exec raw_input(">>>")
                     # end catching
                     if nowpage < pagenum:
                         print "going to page", nowpage, valuelist[nowpage]
                         pagelist.select(valuelist[nowpage])
                     nowpage = nowpage + 1
-                workbook.save('gongxuanke.xls')
-                while True:
-                    exec raw_input(">>>")
-
+                workbook.save(u"公选课.xls")
         else:
             print "you want to find what?"
 

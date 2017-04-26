@@ -29,7 +29,7 @@ def main():
     # time.sleep(8)
     # 通过命令行来控制抓取
     print "ready to catch information!"
-    cmd = raw_input()
+    cmd = raw_input("main>>>")
     while cmd != "exit":
         strlst = cmd.split(' ')
         cmd0 = strlst[0]
@@ -38,8 +38,7 @@ def main():
             pkuget = PkuGet(browser, 3)
             if pkuget.state == 1:
                 pkuget.getinfo(strlst)
-        cmd = raw_input()
+        cmd = raw_input("main>>>")
     browser.quit()
-
 if __name__ == '__main__':
     main()
