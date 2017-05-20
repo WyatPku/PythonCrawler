@@ -17,28 +17,28 @@ class PkuGet:
         self.browser.click_link_by_href("../courseQuery/CourseQueryController.jpf");
         time.sleep(delay)
         self.state = 1  # 判断一下如果页面错误，返回0，现在先这样写
-        print "initial finished"
+        print("initial finished")
 
     def getinfo(self, strlst):
-        print "getting information!"
+        print("getting information!")
         if len(strlst) > 1:
             if strlst[1] == "培养方案":
-                print "这里面没有东西啊？？？"
+                print("这里面没有东西啊？？？")
                 self.browser.find_by_id("education_plan_bk").click()
             if strlst[1] == "专业课":
-                print "getting speciality"
+                print("getting speciality")
                 self.browser.find_by_id("speciality").click()
                 self.browser.execute_script('''document.getElementById("myForm").submit()''')
                 time.sleep(self.delay)
                 pagelist = self.browser.find_by_name("netui_row")
                 pagenum = len(pagelist.text.splitlines())
-                print "find pagelist :", pagenum
+                print("find pagelist :", pagenum)
             if strlst[1] == "公选课":
                 ifrequirej = False
                 if len(strlst) > 2 and strlst[2] == "more":
                     ifrequirej = True
                 glocount = 0
-                print "creating excel book"
+                print("creating excel book")
                 workbook = xlwt.Workbook()
                 basic = workbook.add_sheet('basic', cell_overwrite_ok=True)
                 basic.write(0, 0, u"本地序号")
@@ -53,7 +53,7 @@ class PkuGet:
                 basic.write(0, 9, u"开课年级")
                 basic.write(0, 10, u"上课时间及地点")
                 basic.write(0, 11, u"备注")
-                print "getting pub_choice"
+                print("getting pub_choice")
                 self.browser.find_by_id("pub_choice").check()
                 self.browser.execute_script('''document.getElementById("myForm").submit()''')
                 nowpage = int(1)
@@ -63,16 +63,16 @@ class PkuGet:
                     pagelist = self.browser.find_by_name("netui_row").first
                     optionlist = pagelist.find_by_tag("option")
                     valuelist = [str(i.value) for i in optionlist]
-                    print valuelist
+                    print(valuelist)
                     # print len(optionlist), optionlist
                     # pagenum = len(pagelist.text.splitlines())
                     pagenum = len(optionlist)
-                    print "find page :", pagenum
+                    print("find page :", pagenum)
                     # catching information
                     tbodylist = self.browser.find_by_tag("tbody")
                     trlist = tbodylist[4].find_by_tag("tr")
                     classlen = len(trlist) - 3
-                    print "found", classlen, "on this page"
+                    print("found", classlen, "on this page")
                     classElement = [trlist[i] for i in range(1, classlen + 1)]  # 这些都是课程的数据了
                     for i in range(0, classlen):
                         glocount = glocount + 1
@@ -102,7 +102,7 @@ class PkuGet:
                         basic.write(glocount, 9, kaikenianji.decode("utf-8"))
                         basic.write(glocount, 10, shangkeshijianjijiaoshi.decode("utf-8"))
                         basic.write(glocount, 11, beizhu.decode("utf-8"))
-                        print "finished basic info catch of", kechengming
+                        print("finished basic info catch of", kechengming)
                         if ifrequirej:
                             kechenghao_a.click()
                             time.sleep(self.delay / 2)
@@ -116,16 +116,16 @@ class PkuGet:
                             self.browser.windows[1].close()
                             time.sleep(1)
                             # print self.browser.title
-                            print "finished more info catch"
+                            print("finished more info catch")
                         # while True:
                         # exec raw_input(">>>")
                     # end catching
                     if nowpage < pagenum:
-                        print "going to page", nowpage, valuelist[nowpage]
+                        print("going to page", nowpage, valuelist[nowpage])
                         pagelist.select(valuelist[nowpage])
                     nowpage = nowpage + 1
                 workbook.save(u"公选课.xls")
         else:
-            print "you want to find what?"
+            print("you want to find what?")
 
 
