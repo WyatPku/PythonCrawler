@@ -1,0 +1,10 @@
+# coding=utf-8
+# using python 2.7
+
+import xlrd
+
+workbook = xlrd.open_workbook(u"公选课.xls")
+print(workbook.sheet_names())
+sheet=workbook.sheet_by_name("basic")
+rows=sheet.get_rows()
+print(sheet.cell(2,2).value)

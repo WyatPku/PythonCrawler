@@ -1,0 +1,11 @@
+以下均为python3
+
+ui.py提供交互界面
+Searcher.py进行检索，需要目录下已经有“公选课.xlx”
+TimeParser.py用来提取时间信息
+lt.py忽略就好
+
+用到的库有：
+PyQt5 （图形界面）
+jieba (用于中文分词)
+xlrd （用于读xls）

@@ -4,7 +4,7 @@
 
 class Links:
     def __init__(self):
-        print "init electiveLinks"
+        print("init electiveLinks")
 
     @staticmethod
     def login():

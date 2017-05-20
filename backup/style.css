@@ -1,0 +1,444 @@
+ body
+{
+background-color: #ffffff;
+background-repeat: no-repeat;
+font-family: Arial, Verdana;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+margin: 0; 
+padding: 0;
+}
+/*netui 的datagrid用于课程表的专门样式*/
+.course
+ {
+   border: 1px solid #E2E2E2;
+   border-collapse: collapse;
+   padding-left: 5px;
+ }
+ .course-all
+{
+	background-color: #E7F7AA;
+}
+.course-header,
+.course-footer
+{
+background-color: #CCDDEE;
+color: #555588;
+font-size: 14px;
+text-align: center;
+vertical-align: baseline;
+line-height: 18px;
+border-color: #999999;
+border-style: solid;
+border-width: 1px;
+padding-left: 10px;
+}
+/*netui 的datagrid的专门样式*/
+.datagrid
+ {
+   border: 1px solid #E2E2E2;
+   border-collapse: collapse;
+   padding-left: 5px;
+ }
+ .datagrid-even
+ {
+ background-color: #E8E8E8;
+ 
+ }
+.datagrid-all
+{
+	background-color: #E7F7AA;
+}
+.datagrid-header,
+.datagrid-footer
+{
+background-color: #CCDDEE;
+color: #555588;
+font-size: 14px;
+text-align: center;
+vertical-align: baseline;
+line-height: 18px;
+border-color: #999999;
+border-style: solid;
+border-width: 1px;
+padding-left: 10px;
+}
+
+.title:link {
+	font-size: 12px;
+	color: #333333;
+	background-color: #999999;
+}
+.title:visited {
+font-size: 12px;
+	font-size: 12px;
+        color: #333333;
+	background-color: #333333;
+}
+.title:hover {
+        font-size: 12px;
+	color: #063A96;
+	background-color: #999999;
+}
+
+.title:active {
+	font-size: 12px;
+	color: #063A96;
+        background-color: #999999;
+	
+}
+/* Style for in-page header of the generated rowset pages */
+.pagehead
+{
+font-size: 16px;
+font-weight: bold;
+}
+
+
+/* Table row style referenced in generated various generated pages */
+.tablebody
+{
+/* background-color: #CCDDEE; */
+color: #111111;
+font-size: 14px;
+text-align: left;
+vertical-align: middle;
+padding: 5px 10px 5px 10px;
+}
+
+
+/* Default grid header and footer style for generated rowset pages */
+.gridStyle-tr-header,
+.gridStyle-tr-footer
+{
+background-color: #CCDDEE;
+color: #555588;
+font-size: 14px;
+text-align: left;
+vertical-align: baseline;
+line-height: 18px;
+border-color: #999999;
+border-style: solid;
+border-width: 1px;
+padding-left: 10px;
+}
+
+
+/* Grid base row default style for generated rowset pages */
+.gridStyle-tr-data
+{
+background-color: #FFFFFF;
+color: #111111;
+font-size: 14px;
+text-align: left;
+border-color: #999999;
+border-style: solid;
+border-width: 1px;
+padding-left: 12px;
+}
+
+
+/* Grid alternate row default style for generated rowset pages */
+.gridStyle-tr-alt-data
+{
+background-color: #CCDDEE;
+color: #111111;
+font-size: 14px;
+text-align: left;
+border-color: #999999;
+border-style: solid;
+border-width: 1px;
+padding-left: 12px;
+}
+
+
+/* Used for prompts in generated pages */
+.prompt
+{
+color: #993333;
+font-style: italic;
+}
+
+A:link, A:visited, A:active {
+color: #7777AA;
+text-decoration: underline;
+}
+
+A:hover {
+color: #9999FF;
+background: transparent;
+text-decoration: underline;
+}
+
+
+
+
+/* 以下为自定义css */
+
+a,div,span,p,font,table,tr,td{
+    font-size: 12px;
+}
+
+/* 错误信息的格式 */
+.errmsg{
+    font-size: 13px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* 小标题的格式 */
+.subTitle{
+    color: #39961D;
+    font-weight:bold;
+}
+
+/* portlet中表格的格式 */
+
+.pkuportal-table-portlet{
+    border: 1px solid #E2E2E2;
+    border-collapse: collapse;
+}
+
+.pkuportal-table-portlet tr.odd{
+  background-color: #E8E8E8;
+}
+
+.pkuportal-table-portlet td{
+    padding:2px 5px 2px 5px;
+    border:1px solid #E2E2E2;
+    vertical-align: middle;
+    height:22px;
+}
+
+.pkuportal-table-portlet th{
+    padding:2px 5px 2px 5px;
+    border:1px solid #E2E2E2;
+    vertical-align: middle;
+    background-color:#f0f0f0;
+    text-align: center;
+    height:22px;
+    font-size:12px;
+}
+
+.pkuportal-table-portlet td,span,div,input{
+    font-size:12px;
+}
+
+.pkuportal-table-portlet select,option{
+    font-size:12px;
+}
+
+/* 表格中字段名栏的格式 */
+.pkuportal-td-field{
+    background-color:#f0f0f0;
+    font-size:12px;
+}
+
+/* 表格尾部的格式 */
+.pkuportal-td-footer{
+    background-color:#f0f0f0;
+}
+
+
+.pkuportal-table-footer{
+    border-style:none;
+    border-collapse: collapse;
+    background-color:#f0f0f0;
+    width:100%
+}
+
+.pkuportal-table-footer td{
+    border-style:none;
+}
+
+/* 表格中标题栏的格式 */
+.pkuportal-td-title{
+    background-color:#eaeaea;
+    text-align: center;
+}
+
+/* 说明文字的格式 */
+
+.pkuportal-remark{
+	color:#39961D ;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+/* 强调文字的格式 */
+
+.pkuportal-important{
+	color: #FF0000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* 按钮的格式 */
+
+.pkuportal-button {
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #f0f0f0;
+	text-align: center;
+	vertical-align: bottom;
+	height: 18px;
+	border: 1px outset #f0f0f0;
+}
+
+/* 欢迎中的DIV格式 */
+
+.pkuportal-div-welcome {
+	color: #C41517;
+	font-size: 13px;
+	font-weight: normal;
+	background-color: #f0f0f0;
+    padding-left:5px;
+}
+
+/* 输入框格式 */
+
+.pkuportal-inputtext{
+    width:126px;
+    height:20px;
+}
+
+/* 输入框格式 */
+
+.pkuportal-table-inputtext{
+    height:20px;
+    border-left:0px;
+    border-top:0px;
+    border-rigth:0px;
+}
+
+/*头部的格式*/
+
+A.titlelink1:visited {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+A.titlelink1:active {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+A.titlelink1:hover {
+	LEFT: 1px;
+	COLOR: #FFFFFF;
+	POSITION: relative;
+	TOP: 1px;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+A.titlelink1:link {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/*错误页面的格式*/
+
+.black {
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+}
+
+/*尾部页面的格式*/
+
+.green {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ACCE2C;
+}
+
+/*菜单链接的格式*/
+
+A.menulink:visited {
+	color: #39961D;
+	TEXT-DECORATION: none;
+	font-size: 13px;
+}
+A.menulink:active {
+	color: #39961D;
+	TEXT-DECORATION: none;
+	font-size: 13px;
+}
+A.menulink:hover {
+	LEFT: 1px;
+	COLOR: #FF0000;
+	POSITION: relative;
+	TOP: 1px;
+	TEXT-DECORATION: none;
+}
+A.menulink:link {
+	color: #39961D;
+	TEXT-DECORATION: none;
+	font-size: 13px;
+}
+
+
+A.titlelink2:visited {
+	COLOR: #B90000;
+	TEXT-DECORATION: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+A.titlelink2:active {
+	COLOR: #B90000;
+	TEXT-DECORATION: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+A.titlelink2:hover {
+	LEFT: 1px;
+	COLOR: #B90000;
+	POSITION: relative;
+	TOP: 1px;
+	font-size: 14px;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+A.titlelink2:link {
+	COLOR: #B90000;
+	TEXT-DECORATION: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.gray {
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+}
+.red {
+	font-size: 12px;
+	color: #B90000;
+	font-weight: normal;
+	letter-spacing: 1px;
+	clip: rect(auto,auto,auto,auto);
+	padding-top: 4px;
+}
+/*提示信息的文字格式（操作成功、失败及其他提示）*/
+.message_error{
+color:#FF0000;
+font-weight: bold
+padding-left: 20px;
+padding-top: 2px;
+}
+.message_success{
+color:#39961D;
+font-weight: bold
+padding-left: 20px;
+padding-top: 2px;
+}
+.message_warning{
+color:#C87800;
+font-weight: bold
+padding-left: 20px;
+padding-top: 2px;
+}
